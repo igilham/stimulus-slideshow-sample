@@ -1,5 +1,4 @@
 import { Controller } from "stimulus"
-import { span } from './html';
 
 export default class extends Controller {
   static targets = [ "slide", "index" ];
@@ -22,7 +21,7 @@ export default class extends Controller {
   }
 
   showCurrentSlide(): void {
-    this.slideTargets.forEach((element: any, index) => {
+    this.slideTargets.forEach((element: HTMLElement, index) => {
       element.hidden = index !== this.indexValue;
     });
 
