@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Stimulating Slides</title>
+    <script src="./app.js"></script>
+    <link type="text/css" rel="stylesheet" href="./default.css"/>
+  </head>
+  <body>
+    <div class="slideshow-container" data-controller="slideshow" data-slideshow-index-value="0">
+      <div class="slide" data-slideshow-target="slide">
+        <h1>1: Welcome</h1>
+        <p>blah blah blah</p>
+      </div>
+      <div class="slide" data-slideshow-target="slide">
+        <h1>2: Waffle</h1>
+        <ul>
+          <li>Blah blah blah</li>
+          <li>Blah blah blah</li>
+          <li>Blah blah blah</li>
+        </ul>
+      </div>
+      <div class="slide" data-slideshow-target="slide">
+        <h1>3: More Waffle</h1>
+        <ul>
+          <li>Blah blah blah</li>
+          <li>Blah blah blah</li>
+          <li>Blah blah blah</li>
+        </ul>
+      </div>
+      <div class="slide" data-slideshow-target="slide">
+        <h1>4: Questions?</h1>
+      </div>
+
+      <nav>
+        <button data-action="slideshow#previous">Previous</button>
+        <span>Slide <span data-slideshow-target="index"></span></span>
+        <button data-action="slideshow#next">Next</button>
+      </nav>
+    </div>
+  </body>
+</html>

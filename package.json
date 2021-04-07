@@ -1,0 +1,21 @@
+{
+  "name": "stimulus-slideshow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm-run-all build:*",
+    "build:ts": "esbuild src/app.ts --bundle --outfile=dist/app.js",
+    "build:static": "cp static/* dist/",
+    "open": "open dist/index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "stimulus": "^2.0.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.11.6",
+    "npm-run-all": "^4.1.5"
+  }
+}
